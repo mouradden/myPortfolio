@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/myPortfolio/static/css/main.e650eb3f.css",
+    "main.js": "/myPortfolio/static/js/main.7e4ed0a3.js",
+    "static/media/deliveroo.png": "/myPortfolio/static/media/deliveroo.d8aa4ae5236a8fc65ad7.png",
+    "index.html": "/myPortfolio/index.html",
+    "main.e650eb3f.css.map": "/myPortfolio/static/css/main.e650eb3f.css.map",
+    "main.7e4ed0a3.js.map": "/myPortfolio/static/js/main.7e4ed0a3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e650eb3f.css",
+    "static/js/main.7e4ed0a3.js"
+  ]
+}
