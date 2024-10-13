@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Sections from './components/Sections';
 
 function App() {
+  const scrollToSection = (section) => {
+    const element = document.getElementById(section);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex flex-col md:flex-row md:h-screen h-auto">
+      {/* Header Section (Responsive) */}
+      <Header scrollToSection={scrollToSection} />
+
+      {/* Content Section (Responsive) */}
+      <Sections />
     </div>
   );
 }
