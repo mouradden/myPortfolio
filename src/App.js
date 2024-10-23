@@ -14,10 +14,7 @@ function App() {
 
   return (
     <div className="flex flex-col md:flex-row md:h-screen h-auto">
-      {/* Header Section (Responsive) */}
       <Header scrollToSection={scrollToSection} />
-
-      {/* Content Section (Responsive) */}
       <Sections />
     </div>
   );
