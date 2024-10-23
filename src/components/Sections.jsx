@@ -7,7 +7,56 @@ import { DiNodejs } from "react-icons/di";
 import { TiHtml5 } from "react-icons/ti";
 import { FaCss3Alt } from "react-icons/fa";
 import { FaArrowDown } from "react-icons/fa6";
+import { SiTypescript } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
 import {projectsData} from '../assets/Data';
+
+const technologies = [
+  {
+    name:"HTML",
+    icon: <TiHtml5 color='orange' size={36}/>
+  },
+  {
+    name:"CSS",
+    icon: <FaCss3Alt color='aqua' size={34}/>
+  },
+  {
+    name:"TailwindCSS",
+    icon: <RiTailwindCssFill color='aqua' size={34}/>
+  },
+  {
+    name:"Javascript",
+    icon: <SiJavascript color='yellow' size={32}/>
+  },
+  {
+    name:"Typescript",
+    icon: <SiTypescript color='#6495ED' size={32}/>
+  },
+  {
+    name:"ReactJS",
+    icon: <RiReactjsFill color='#6495ED' size={32}/>
+  },
+  {
+    name:"React Native",
+    icon: <RiReactjsFill color='#6495ED' size={32}/>
+  },
+  {
+    name:"NextJS",
+    icon: <RiNextjsFill color='white' size={32}/>
+  },
+  {
+    name:"NodeJS",
+    icon: <DiNodejs color='green' size={42}/>
+  },
+  {
+    name:"ExpressJS",
+    icon: <SiExpress color='white' size={32}/>
+  },
+  {
+    name:"MongoDB",
+    icon: <SiMongodb color='green' size={32}/>
+  },
+]
 
 const Sections = () => {
   return (
@@ -15,20 +64,23 @@ const Sections = () => {
         <section id="profile" className="h-screen flex flex-col items-center justify-around space-y-6">
           <div>
             <p className="animate-pulse text-lg text-gray-400 text-center">
-            Je suis un développeur passionné par le web, avec une expertise particulière en JavaScript et ses frameworks. J'aime également le développement mobile, et je trouve une grande satisfaction à créer des applications performantes et intuitives. Mon approche est centrée sur l'apprentissage continu et l'adaptabilité. Je travaille dur, je m'adapte rapidement aux nouveaux défis, et je suis toujours ouvert à l'apprentissage de nouvelles technologies pour rester à jour
+            I am a passionate web developer with particular expertise in JavaScript and its frameworks.
+             I also enjoy mobile development and find great satisfaction in creating high-performance and intuitive applications.
+              My approach is focused on continuous learning and adaptability.
+             I work hard, adapt quickly to new challenges, and am always open to learning new technologies to stay up-to-date.
             </p>
           </div>
           <div className='flex-row'>
             <p className='text-xl'>💻 Tech Stack: </p><br />
-            <div className='flex flex-row space-x-4'>
-              <TiHtml5 color='orange' size={36}/>
-              <FaCss3Alt color='aqua' size={34}/>
-              <RiTailwindCssFill color='aqua' size={34}/>
-              <SiJavascript color='yellow' size={32}/>
-              <RiReactjsFill color='#6495ED' size={32}/>
-              <RiNextjsFill color='white' size={32}/>
-              <DiNodejs color='green' size={42}/>
-              <SiMongodb color='green' size={32}/>
+            <div className='flex flex-wrap md:flex-row items-center gap-2'>
+            {
+              technologies.map((item)=>(
+                <div className='flex flex-wrap justify-center items-center border border-gray-300 bg-gray-800 p-1 rounded-lg gap-1 h-12'>
+                  <div className=''>{item.icon}</div>
+                  <p>{item.name}</p>
+                </div>
+              ))
+            }
 
             </div>
           </div>
@@ -46,6 +98,9 @@ const Sections = () => {
                 title={item.title}
                 image={item.image}
                 description={item.description}
+                stack={item.stack}
+                link={item.url}
+                github={item.github}
               />
             ))
           }

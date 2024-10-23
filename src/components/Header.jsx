@@ -36,9 +36,9 @@ const Header = ({ scrollToSection }) => {
 
   return (
     <header className=" w-full md:w-1/3 h-1/2 md:h-screen bg-[#141c3c] flex flex-col items-center justify-around">
-        <div className="animate-pulse flex flex-col items-start justify-center space-y-8">
+        <div className=" flex flex-col items-start justify-center space-y-8">
           <h1 className="text-5xl text-white font-bold">Mourad Denguir</h1>
-          <h2 className="text-lg text-white font-semibold">Web Developer</h2>
+          <h2 className="text-lg text-white font-semibold">Web/Mobile Developer</h2>
           <p className="text-gray-400 px-4">
             I'm a web developer. I love transforming ideas into code and I love learning new things.
           </p>
@@ -81,8 +81,8 @@ const Header = ({ scrollToSection }) => {
         {
             socials.map((item, index) => {
                 return (
-                <a href={item.path} key={index} >
-                    <div className='text-3xl cursor-pointer '>
+                <a href={item.path} target="_blank" rel="noopener noreferrer" key={index} >
+                    <div className='text-4xl cursor-pointer '>
                         {item.icon}
                     </div>
                 </a>
