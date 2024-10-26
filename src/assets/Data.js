@@ -1,5 +1,15 @@
 export const projectsData = [
     {
+        id: 3,
+        title: 'HULU App - A nextJS clone of a movie app',
+        description: 'A self-built project where I used NextJs and TailwindCss for the responsive styling. I practiced many skills such as building a responsive UI, creating dynamic routing, and integrating APIs for getting a dynamic data .',
+        image: require('../assets/hulu.png'),
+        stack:["Javascript", "tailwindcss", "NextJs"],
+        url:'https://hulu-clone-ten-murex.vercel.app',
+        github: "https://github.com/mouradden/hulu-clone"
+    
+    },
+    {
         id: 5,
         title: 'Todo App - A full stack MERN app',
         description: 'A self-built project where I used MERN Stack',
@@ -23,16 +33,6 @@ export const projectsData = [
         image: require('../assets/course.png'),
         stack:["React Native", "tailwindcss", "typescript", "NestJS"],
         github: "https://github.com/mouradden/Course-Management-System-ReactNative"
-    },
-    {
-        id: 3,
-        title: 'HULU App - A nextJS clone of a movie app',
-        description: 'A self-built project where I used NextJs and Tailwindcss for the responsive styling. I practiced many skills such as building a responsive UI, creating dynamic routing, and integrating APIs for getting a dynamic data .',
-        image: require('../assets/hulu.png'),
-        stack:["Javascript", "tailwindcss", "NextJs"],
-        url:'https://hulu-clone-ten-murex.vercel.app',
-        github: "https://github.com/mouradden/hulu-clone"
-
     },
     {
         id: 4,
