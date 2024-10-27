@@ -2,7 +2,7 @@ export const projectsData = [
     {
         id: 3,
         title: 'HULU App - A nextJS clone of a movie app',
-        description: 'A self-built project where I used NextJs and TailwindCss for the responsive styling. I practiced many skills such as building a responsive UI, creating dynamic routing, and integrating APIs for getting a dynamic data .',
+        description: 'A self-built project where I used NextJs and TailwindCss for the responsive styling. I practiced many skills such as building a responsive UI, creating dynamic routing, and integrating APIs for getting a dynamic data with server side rendering using getServerSideProps.',
         image: require('../assets/hulu.png'),
         stack:["Javascript", "tailwindcss", "NextJs"],
         url:'https://hulu-clone-ten-murex.vercel.app',
